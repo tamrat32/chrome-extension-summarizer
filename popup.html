@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Quick Summarizer</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; width: 360px; margin: 0; padding: 12px; }
+      textarea { width: 100%; height: 130px; }
+      .row { display: flex; gap: 8px; align-items: center; }
+      .btn { padding: 8px 10px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; background: #fff; }
+      .out { white-space: pre-wrap; border: 1px solid #eee; padding: 8px; border-radius: 8px; }
+      .muted { color: #666; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h3>Quick Summarizer</h3>
+    <p class="muted">Paste text below, or select text on any page and use the right‑click menu.</p>
+    <textarea id="input" placeholder="Paste text to summarize..."></textarea>
+    <div class="row" style="margin:8px 0;">
+      <button id="summarize" class="btn">Summarize</button>
+      <button id="copy" class="btn">Copy</button>
+      <a href="options.html" target="_blank" class="btn" style="text-decoration:none;">Options</a>
+    </div>
+    <div id="output" class="out" placeholder="Summary will appear here"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
